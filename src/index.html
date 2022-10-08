@@ -22,6 +22,13 @@
             left:48px;
             background-position: center;
         } */
+/* 
+        #testingImg{
+            margin-left: -1000px;
+        }
+        #testingImg::before{
+            margin-left: 1000px;
+        } */
         
     </style>
 </head>
@@ -91,7 +98,9 @@
 </section>
 
 <section id="Body" class="grid grid-cols-[30%_65%_10%] md:grid-cols-[25%,65%,10%] lg:grid-cols-[243px_1fr_3%]">
+    <!-- ***side bar*** -->
     <div>
+        <!-- side bar button start -->
         <div class="mt-0 md:mt-2 mb-2 md:mb-4 pl-0.5 relative flex h-10 md:h-14">
            <div  
                   class="
@@ -104,7 +113,10 @@
                <div class="absolute top-[35%] md:top-[28%] right-[20%] normal-case leading-3 text-[9px] md:text-base overflow-hidden font-medium tracking-normal select-none">စာစီရန်
                </div>
             </div>
-    </div>
+        </div>
+        <!-- side bar button end -->
+
+        <!-- side bar list start -->
         <div class="cursor-pointer">
             <div class="text-sm relative select-none">
                 <div class="py-1 md:py-2 bg-[#d3e3fd] w-11/12 pl-3 rounded-r-full flex justify-between text-ellipsis overflow-visible whitespace-nowrap">
@@ -295,17 +307,11 @@
             <div></div>
             <div></div>
         </div>
-
+        <!-- side bar list end -->
     </div>
+    <!-- ***side bar end*** -->
 
-
-    <!-- background-image 
-    5// https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/chevron_left/default/20px.svg
-    6// https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/chevron_right/default/20px.svg
-    7// https://www.gstatic.com/inputtools/images/ita_sprite8_2x.png
-    8// https://www.gstatic.com/images/icons/material/system_gm/2x/arrow_drop_down_black_20dp.png
-    -->
-
+    <!-- Body very top start -->
     <div class="bg-white rounded-t-[18px]">
         <div class="before:shadow-[inset_0_-1px_0_0_transparent] before:absolute before:block before:top-0 before:right-0 before:bottom-0 before:left-0
                     flex justify-between h-8 md:h-12 px-4 md:mr-4 px-1 mr-1 whitespace-nowrap shadow-[0_3px_2px_-2px_rgb(0,0,0,0.1)] relative">
@@ -340,11 +346,12 @@
                         before:hover:border-[12px] before:hover:left-[23px]
                         md:before:hover:border-[18px] before:hover:rounded-[20px] before:hover:border-[#0000001a]
                         before:hover:w-[0.01px] before:hover:h-[0.01px] before:hover:-top-[19px] md:before:hover:left-[48px] 
-                        before:hover:bg-center
+                        before:hover:bg-center -ml-[1000px] before:ml-[1000px]
                         ">
                     </span>
 
                     <span
+                    id="testingImg"
                     class="
                         before:bg-[url('https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/more_vert/default/20px.svg')]
                         before:md:bg-[length:20px_20px] before:md:bg-[length:18px_18px] before:bg-[length:10px_10px] before:bg-no-repeat
@@ -353,7 +360,7 @@
                         before:hover:border-[12px] before:hover:left-[40px]
                         md:before:hover:border-[18px] before:hover:rounded-[20px] before:hover:border-[#0000001a]
                         before:hover:w-[0.01px] before:hover:h-[0.01px] before:hover:-top-[18px] md:before:hover:left-[88px] 
-                        before:hover:bg-center
+                        before:hover:bg-center -ml-[1000px] before:ml-[1000px]
                         ">
                     </span>
 
@@ -385,7 +392,7 @@
                         md:before:right-[90px] md:before:top-[15px] lg:before:right-32 absolute w-[6%] md:w-[4%] lg:w-[1.5%] h-8 
                         md:h-14 rounded-md md:rounded-2xl cursor-pointer
                         before:hover:border-[12px] md:before:hover:border-[18px] before:hover:rounded-[20px] before:hover:border-[#0000001a]
-                        before:hover:right-[60px]
+                        before:hover:right-[60px] 
                         before:hover:w-[0.01px] before:hover:h-[0.01px] before:hover:top-[8px] md:before:hover:right-[115px] 
                         before:hover:bg-center
                         ">
@@ -416,9 +423,10 @@
 
         </div>
     </div>
-
+         <!-- Body very top end -->
     <div></div>
 </section>
+
 
             <!--<section id="Body"  class="px-1 md:px-2  grid grid-cols-[20%_70%_10%] md:grid-cols-[20%,55%,25%] lg:grid-cols-[238px_1fr_3%]">-->
 <!--    <div>-->
@@ -454,3 +462,12 @@
 
 </script>
 </html>
+
+
+
+    <!-- background-image 
+    5// https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/chevron_left/default/20px.svg
+    6// https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/chevron_right/default/20px.svg
+    7// https://www.gstatic.com/inputtools/images/ita_sprite8_2x.png
+    8// https://www.gstatic.com/images/icons/material/system_gm/2x/arrow_drop_down_black_20dp.png
+    -->
